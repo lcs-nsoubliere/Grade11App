@@ -10,12 +10,9 @@ import SwiftUI
 struct ListOfAccounts: View {
     var body: some View {
         List {
-            NavigationLink(destination:{
-                Account1View()
-            }, label: {
-                EnhancedListItem(imageName: "person.text.rectangle.fill",
-                                 title: "Account1")
-            })
+            NavigationLink(destination: Account2View()){
+                Text("*Account1Name*")
+            }
             NavigationLink(destination: Account2View()){
                 Text("*Account2Name*")
             }
